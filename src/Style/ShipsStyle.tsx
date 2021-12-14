@@ -2,7 +2,7 @@ import { makeStyles, createStyles, Theme } from '@material-ui/core/styles';
 
 
 export const TextStyle = makeStyles((theme: Theme) => createStyles({
-    textStyle: {
+    text: {
       color: '#DC143C',
       fontWeight: 'bold',
       fontSize: "20px",

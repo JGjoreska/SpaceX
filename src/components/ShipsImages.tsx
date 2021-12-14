@@ -1,20 +1,11 @@
 import React from "react";
 import Image from 'material-ui-image'
 import {ImageStyle} from "../Style/ShipsStyle"
+import * as types from "../types/types"
 
-interface Ship {
-  name: string
-  image: string
-}
-
-interface Props {
-  ships: Ship[]
-}
-
-const ShipsImages: React.FC<Props> = (props: Props) => {
+const ShipsImages: React.FC<types.Props> = (props: types.Props) => {
   const imageStyles = ImageStyle()
-  return (
-    <div>
+  const ship = 
       <ul>{props.ships.map((ship,index) => {
         return <li key={index}>
           <div className={imageStyles.imageSize}>
@@ -22,6 +13,8 @@ const ShipsImages: React.FC<Props> = (props: Props) => {
           </div>
         </li>})}
       </ul> 
+  return (
+    <div>{ship}
     </div>
   )
 }
